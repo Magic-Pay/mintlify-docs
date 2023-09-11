@@ -1,0 +1,71 @@
+{
+  "name": "Magic Pay",
+  "logo": {
+    "dark": "/logo/magic.svg",
+    "light": "/logo/magic.svg"
+  },
+  "favicon": "/logo/magic.svg",
+  "colors": {
+    "primary": "#9563FF",
+    "light": "#AE87FF",
+    "dark": "#0D001D",
+    "background": {
+      "dark": "#090014"
+    },
+    "anchors": {
+      "from": "#FF7F57",
+      "to": "#9563FF"
+    }
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/authentication"]
+    },
+
+    {
+      "group": "Checkout API",
+      "pages": [
+        "api-reference/endpoint/checkout/get_checkout",
+        "api-reference/endpoint/checkout/create_checkout",
+        "api-reference/endpoint/checkout/generate_link_token"
+      ]
+    },
+    {
+      "group": "Consumer API",
+      "pages": [
+        "api-reference/endpoint/consumer/create_link_token",
+        "api-reference/endpoint/consumer/exchange_public_token"
+      ]
+    },
+    {
+      "group": "Manage Subscription API",
+      "pages": [
+        "api-reference/endpoint/manage_subscription/get_subscription_details",
+        "api-reference/endpoint/manage_subscription/subscription_cancel"
+      ]
+    },
+    {
+      "group": "Refund API",
+      "pages": [
+        "api-reference/endpoint/refund_request/consumer_refund_request",
+        "api-reference/endpoint/refund_request/consumer_refund_list",
+        "api-reference/endpoint/refund_request/merchant_status_refund_request",
+        "api-reference/endpoint/refund_request/initiate_refund_transfer"
+      ]
+    },
+    {
+      "group": "Verify User API",
+      "pages": [
+        "api-reference/endpoint/user/send_code",
+        "api-reference/endpoint/user/verify_code"
+      ]
+    }
+  ]
+}
